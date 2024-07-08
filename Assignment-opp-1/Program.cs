@@ -150,7 +150,7 @@ namespace Assignment_opp_1
             double result = p.Sub();
 
             Console.WriteLine($"The distance between the two points is : {result}");
-
+            
 
             #endregion
         }
