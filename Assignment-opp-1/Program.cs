@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
+using System.Security.Cryptography;
 using static Assignment_opp_1.Program;
 
 namespace Assignment_opp_1
@@ -131,6 +132,24 @@ namespace Assignment_opp_1
 
             #region Q5  Create a struct called "Point" to represent a 2D point with properties "X" and "Y". Write a C# program that takes two points as input from the user and calculates the distance between them.
 
+            Point p; 
+            do
+            {
+                Console.Write("Please enter the point on X axis :  ");
+                flag = int.TryParse(Console.ReadLine(), out p.x);
+
+            } while (!flag);
+            
+            do
+            {
+                Console.Write("Please enter the point on y axis :  ");
+                flag = int.TryParse(Console.ReadLine(), out p.y);
+
+            } while (!flag);
+
+            double result = p.Sub();
+
+            Console.WriteLine($"The distance between the two points is : {result}");
 
 
             #endregion
